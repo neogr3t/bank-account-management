@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2191e1;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style the container to control its width */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+}
+
+/* Style the account and transaction sections */
+.account-section, .transaction-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the forms */
+.account-form, .transaction-form {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style form labels and inputs */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button */
+button[type="submit"], #clear-history-button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover, #clear-history-button:hover {
+    background-color: #005fa3;
+}
+
+/* Style the transaction table */
+#transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#transaction-table th, #transaction-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#transaction-table th {
+    background-color: #007acc;
+    color: white;
+}
+
+/* Add space for the transaction table */
+#transaction-list {
+    margin-top: 10px;
+}
+
+/* Style the messages */
+#account-creation-message, #transaction-result {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Style the account details */
+.account-details {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.account-details h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.account-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.account-details strong {
+    font-weight: bold;
+}
