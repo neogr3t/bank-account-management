@@ -135,9 +135,12 @@ function updateAccountDetails() {
 }
 
 // Update transaction history
+// Update transaction history
 function updateTransactionHistory() {
     const tbody = document.getElementById("transaction-list");
     tbody.innerHTML = "";
+
+    const clearHistoryButton = document.getElementById("clear-history-button"); // Get the clear history button element
 
     if (!currentAccount) {
         // Account not created, hide the "Clear History" button
@@ -178,3 +181,4 @@ function updateTransactionHistory() {
         tbody.appendChild(row);
     }
 }
+

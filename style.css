@@ -27,6 +27,20 @@ main {
     justify-content: center;
     padding: 20px;
 }
+/* Style the message div */
+.message {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none; /* Initially hide the message div */
+}
+
+/* Style message text */
+#message-text {
+    font-weight: bold;
+}
 
 /* Style the container to control its width */
 .container {

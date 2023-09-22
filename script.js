@@ -97,7 +97,7 @@ function handleTransaction(transactionType, amountInput) {
     } catch (error) {
         transactionResult.textContent = error.message;
     } finally {
-        amountInput.value = ""; // Clear the input field
+        amountInput.value = ""; 
         updateAccountDetails();
         updateTransactionHistory();
     }
@@ -120,6 +120,15 @@ clearHistoryButton.addEventListener("click", function () {
     currentAccount.transactions = [];
     updateTransactionHistory();
 });
+function showMessage(message, color) {
+    const messageDiv = document.querySelector(".message");
+    const messageText = document.getElementById("message-text");
+
+    messageText.textContent = message;
+    messageDiv.style.backgroundColor = color;
+    messageDiv.style.display = "block"; // Show the message div
+}
+
 
 // Update account details
 function updateAccountDetails() {
@@ -153,7 +162,7 @@ function updateTransactionHistory() {
         `;
         tbody.appendChild(row);
 
-        return; // Exit the function early
+        return; 
     }
 
     if (currentAccount.transactions.length > 0) {
